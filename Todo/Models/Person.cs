@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using Todo.Models;
+
 
 namespace Todo.Models
 {
@@ -12,12 +14,14 @@ namespace Todo.Models
         private readonly int Id;
         private string? Name1;
         private string? Name2;
+       
         public Person(int id, string firstname, string lastname)
         {
             this.Id = id;
             Name1 = firstname;
             Name2 = lastname;
         }
+
         public int id
         { get
             {

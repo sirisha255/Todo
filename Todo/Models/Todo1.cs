@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Todo.Models
 {
     public class Todo1
@@ -29,16 +30,6 @@ namespace Todo.Models
             get { return Description; }
             set { Description = value; }
         }
-       // public bool Done
-       // {
-       //     get { return done; }
-            
-
-       // }
-     //   public Person Assignee
-     //   {
-      //      get { return assignee; }
-     //       set { assignee = value; }
-     //   }
+      
     }
 }

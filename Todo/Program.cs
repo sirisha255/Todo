@@ -31,6 +31,15 @@ namespace Todo
             Console.ReadLine();
             Console.WriteLine(tps.reset);
 
+            //PeopleService pes = new PeopleService();
+           // pes.newPersons("xxx", "abc");
+           // pes.newPersons("yyyy", "choco");
+           // pes.newPersons("tttt", "sisi");
+           // Person person1 = new Person("new", "person", 21);
+
+           // Console.WriteLine(pes.FindAll());
+
+
            
 
 

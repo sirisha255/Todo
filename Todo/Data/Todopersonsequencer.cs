@@ -4,38 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Todo.Data
 {
     internal class Todopersonsequencer
     {
-        private int nameid;
-        private int Reset;
+        private static int nameid;
         public Todopersonsequencer(int Nextid)
         {
-            this.nameid = Nextid;
-            Reset = 0;
+            nameid = Nextid;
         }
-        public int Nextid
+        public int Nextid()
         {
-            get
-            {
-
-                return nameid++;
-
-            }
-            set
-            {
-                nameid = value;
-            }
+            nameid++;
+            return nameid;      
 
         }
-        public int reset
+        public void reset()
         {
-            get
-            {
-                return Reset;
-            }
-
+            nameid = 0;
         }
 
     }

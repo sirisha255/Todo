@@ -4,41 +4,33 @@ using System.Linq;
 using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
+using Todo.Models;
+
 
 namespace Todo.Data
 {
     public class Personsequencer
     {
-        private int Personid;
-        private int Reset;
-        public  Personsequencer(int NextPersonid)
+        private static int Personid;
+        public Personsequencer(int NextPersonid)
         {
-            this.Personid = NextPersonid;
-            Reset = 0;
-        }
-        public int NextPersonid
-        {
-            get
-            {
-               
-                return Personid++;
-               
-            }
-            set
-            {
-                Personid = value;
-            }
+            Personid = NextPersonid;
 
         }
-        public int reset
+        public static  int GetPersonid()
         {
-          get 
-            { 
-                return Reset;
-            }
-           
+            return Personid;
         }
+        public static int NextPersonid()
+        {
+            Personid++;
+            return Personid;
 
+        }
+        public void Reset()
+        {
+            Personid = 0;
+        }
     }
-    
 }
+
